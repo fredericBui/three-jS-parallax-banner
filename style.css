@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+#threeJSBanner {
+  width: 100vw;
+  height: 500px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  position: relative;
+}
+
+#threeJSBanner h2 {
+  position: absolute;
+  width: 100vw;
+  color: white;
+  top: 50px;
+  text-align: center;
+}
