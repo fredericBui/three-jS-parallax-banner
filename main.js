@@ -1,12 +1,12 @@
 import * as THREE from 'three'
 
 const width = window.innerWidth,
-  height = 500
+  height = 600
 
 // init
 
 const camera = new THREE.PerspectiveCamera(50, width / height, 0.01, 10)
-camera.position.z = 1
+camera.position.z = 3
 
 const scene = new THREE.Scene()
 
@@ -27,6 +27,7 @@ document.getElementById('threeJSBanner').appendChild(renderer.domElement)
 console.log(window.scrollY)
 
 document.onscroll = function () {
+  camera.position.z = -window.scrollY / 120 + 3
   mesh.rotation.x = window.scrollY / 100
   mesh.rotation.y = window.scrollY / 100
 }
