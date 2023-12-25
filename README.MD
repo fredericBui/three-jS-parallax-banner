@@ -1,8 +1,8 @@
-# Easy3JSBanner
+# Easy3JSBanner & Gallery
 
 ## Overview
 
-Welcome to Easy3JSBanner, a simple and beginner-friendly project that demonstrates how easy it is to implement Three.js and create a 3D banner for your website. This project aims to provide a quick and accessible introduction to Three.js, a popular JavaScript library for creating 3D graphics on the web.
+Welcome to Easy3JSBanner & Gallery, a simple and beginner-friendly project that demonstrates how easy it is to implement Three.js and create a 3D banner for your website. This project aims to provide a quick and accessible introduction to Three.js, a popular JavaScript library for creating 3D graphics on the web.
 
 ## Customizing the Banner
 
