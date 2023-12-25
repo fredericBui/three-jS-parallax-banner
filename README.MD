@@ -12,3 +12,11 @@ Feel free to experiment with different values and settings to create your own un
 ## Contributing
 
 If you find any issues or have suggestions for improvement, please open an issue or submit a pull request. Contributions are welcome!
+
+## New features
+
+Now you can display a gallery of 3D models
+
+## To improve
+
+Refactor threeJSItem & threeJSBanner to use it as a class

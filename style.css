@@ -22,3 +22,16 @@ body {
   top: 50px;
   text-align: center;
 }
+
+#threeJSGallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#threeJSItem1 {
+  background-color: rgb(141, 218, 141);
+}
+
+#threeJSItem2 {
+  background-color: pink;
+}
