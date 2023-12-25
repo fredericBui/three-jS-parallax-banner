@@ -1,8 +1,11 @@
 import * as THREE from 'three'
 
-// Personalize the height (don't forget to change height of your banner in CSS also)
-const width = window.innerWidth,
-  height = 600
+var elem = document.querySelector('#threeJSBanner')
+var style = getComputedStyle(elem)
+
+// Personalize the height & width in CSS
+const width = style.width.replace(/\D/g, ''),
+  height = style.height.replace(/\D/g, '')
 
 // init
 

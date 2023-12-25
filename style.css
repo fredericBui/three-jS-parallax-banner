@@ -17,7 +17,7 @@ body {
 
 #threeJSBanner h2 {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   color: white;
   top: 50px;
   text-align: center;
