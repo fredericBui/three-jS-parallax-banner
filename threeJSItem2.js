@@ -14,11 +14,11 @@ const width = style.width.replace(/\D/g, ''),
 // init
 const scene = new THREE.Scene()
 
-const camera = new THREE.PerspectiveCamera(28, width / height, 0.01, 200)
+const camera = new THREE.PerspectiveCamera(20, width / height, 0.01, 200)
 // Change the distance of the camera
-camera.position.y = 30
-camera.position.z = 40
-camera.position.x = -45
+camera.position.y = 75
+camera.position.z = 70
+camera.position.x = 30
 
 // Uncomment if you need the grid helper
 // const size = 100
@@ -27,8 +27,8 @@ camera.position.x = -45
 // scene.add(gridHelper)
 
 // Personalize the light color & intensity
-const mainLight = new THREE.DirectionalLight('white', 30)
-mainLight.position.set(-10, 10, 10)
+const mainLight = new THREE.DirectionalLight('white', 80)
+mainLight.position.set(-15, 10, 10)
 scene.add(mainLight)
 
 // Personalize the lights colors & intensity
@@ -42,8 +42,9 @@ loader.load(
   'models/pb169_shoe_mid.glb',
   function (gltf) {
     let model = gltf.scene
-    model.position.y = 7
-    model.position.x = -7
+    model.position.y = 9
+    model.rotation.y = 1.3
+    model.scale.set(1.3, 1.3, 1.3)
     scene.add(model)
   },
   undefined,
