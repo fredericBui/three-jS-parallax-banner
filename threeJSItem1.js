@@ -28,7 +28,7 @@ camera.position.x = 30
 
 // Personalize the light color & intensity
 const mainLight = new THREE.DirectionalLight('white', 5)
-mainLight.position.set(10, 10, 10)
+mainLight.position.set(-10, 10, 10)
 scene.add(mainLight)
 
 // Personalize the lights colors & intensity
