@@ -12,18 +12,42 @@ const width = style.width.replace(/\D/g, ''),
   height = style.height.replace(/\D/g, '')
 
 // init
-
-const camera = new THREE.PerspectiveCamera(50, width / height, 0.01, 10)
-// Change the distance of the camera
-camera.position.z = 1
-
 const scene = new THREE.Scene()
 
-const geometry = new THREE.BoxGeometry(0.2, 0.2, 0.2) //Change the box size
-const material = new THREE.MeshNormalMaterial()
+const camera = new THREE.PerspectiveCamera(20, width / height, 0.01, 200)
+// Change the distance of the camera
+camera.position.y = 75
+camera.position.z = 70
+camera.position.x = 30
 
-const mesh = new THREE.Mesh(geometry, material)
-scene.add(mesh)
+// Uncomment if you need the grid helper
+// const size = 100
+// const divisions = 100
+// const gridHelper = new THREE.GridHelper(size, divisions)
+// scene.add(gridHelper)
+
+// Personalize the light color & intensity
+const mainLight = new THREE.DirectionalLight('white', 5)
+mainLight.position.set(10, 10, 10)
+scene.add(mainLight)
+
+// Personalize the lights colors & intensity
+const ambientLight = new THREE.HemisphereLight('white', 'darkslategrey', 5)
+ambientLight.position.set(0, 1, 0)
+scene.add(ambientLight)
+
+const loader = new GLTFLoader()
+
+loader.load(
+  'models/fire_shoes.glb',
+  function (gltf) {
+    scene.add(gltf.scene)
+  },
+  undefined,
+  function (error) {
+    console.error(error)
+  }
+)
 
 const renderer = new THREE.WebGLRenderer({ antialias: true })
 renderer.setSize(width, height)
@@ -34,7 +58,6 @@ renderer.setClearColor(0x000000, 0)
 document.getElementById('threeJSItem1').appendChild(renderer.domElement)
 
 const controls = new OrbitControls(camera, renderer.domElement)
-const loader = new GLTFLoader()
 
 function animation(time) {
   renderer.render(scene, camera)

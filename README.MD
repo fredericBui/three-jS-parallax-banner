@@ -16,6 +16,7 @@ If you find any issues or have suggestions for improvement, please open an issue
 ## New features
 
 Now you can display a gallery of 3D models
+Place your 3D models in the models folder and change threeJSItem files
 
 ## To improve
 
