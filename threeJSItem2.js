@@ -43,6 +43,7 @@ loader.load(
   function (gltf) {
     let model = gltf.scene
     model.position.y = 9
+    model.position.x = -9
     model.rotation.y = 1.3
     model.scale.set(1.3, 1.3, 1.3)
     scene.add(model)
