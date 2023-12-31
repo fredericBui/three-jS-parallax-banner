@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <meta property="og:title" content="Parralax 3D banner">
+    <meta property="og:description" content="Parralax 3D banner">
+    <meta property="og:image" content="A 3D box floating in the air ">
+    <meta property="og:url" content="https://three-js-parallax-banner.vercel.app/metaBanner.jpg">
+    <meta name="twitter:card" content="Parralax 3D banner">
+		<title>Easy3JSBanner & Gallery</title>
+        <script type="importmap">
+            {
+              "imports": {
+                "three": "https://unpkg.com/three@v0.149.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@v0.149.0/examples/jsm/"
+              }
+            }
+        </script>
+        <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+        <section></section>
+          <h2>3D Model interaction</h2>
+          <div id="threeJSInteractItem"></div>
+          <p style="text-align: center;"><strong>Pick a color</strong></p>
+          <div style="text-align: center;">
+            <button class="actionBtn" style="background-color: white;" color="white"></button>
+            <button class="actionBtn" style="background-color: #FE8100;" color="#FE8100"></button>
+            <button class="actionBtn" style="background-color: #e666b5;" color="#e666b5"></button>
+            <button class="actionBtn" style="background-color: #73df6a;" color="#73df6a"></button>
+            <button class="actionBtn" style="background-color: #05A09E;" color="#05A09E"></button>
+            <button class="actionBtn" style="background-color: rgb(53, 53, 53);" color="rgb(53, 53, 53)"></button>
+          </div>
+        </section>
+
+    <script type="module" src="/threeJSInteractItem.js"></script>
+  </body>
+</html>
