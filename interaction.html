@@ -19,17 +19,24 @@
         <link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-        <section></section>
+        <section>
           <h2>3D Model interaction</h2>
           <div id="threeJSInteractItem"></div>
           <p style="text-align: center;"><strong>Pick a color</strong></p>
           <div style="text-align: center;">
-            <button class="actionBtn" style="background-color: white;" color="white"></button>
-            <button class="actionBtn" style="background-color: #FE8100;" color="#FE8100"></button>
-            <button class="actionBtn" style="background-color: #e666b5;" color="#e666b5"></button>
-            <button class="actionBtn" style="background-color: #73df6a;" color="#73df6a"></button>
-            <button class="actionBtn" style="background-color: #05A09E;" color="#05A09E"></button>
-            <button class="actionBtn" style="background-color: rgb(53, 53, 53);" color="rgb(53, 53, 53)"></button>
+            <button class="meshToonMaterialBtn" style="background-color: white;" color="white"></button>
+            <button class="meshToonMaterialBtn" style="background-color: #FE8100;" color="#FE8100"></button>
+            <button class="meshToonMaterialBtn" style="background-color: #e666b5;" color="#e666b5"></button>
+            <button class="meshToonMaterialBtn" style="background-color: #73df6a;" color="#73df6a"></button>
+            <button class="meshToonMaterialBtn" style="background-color: #05A09E;" color="#05A09E"></button>
+            <button class="meshToonMaterialBtn" style="background-color: rgb(53, 53, 53);" color="rgb(53, 53, 53)"></button>
+          </div>
+          <p style="text-align: center;"><strong>Pick a texture</strong></p>
+          <div style="text-align: center;">
+            <button class="meshBasicMaterialBtn" style="background-image: url('/textures/leather.png');background-size: cover;" texture="leather"></button>
+            <button class="meshBasicMaterialBtn" style="background-image: url('/textures/gold.png');background-size: cover;" texture="gold"></button>
+            <button class="meshBasicMaterialBtn" style="background-image: url('/textures/water.png');background-size: cover;" texture="water"></button>
+            <button class="meshBasicMaterialBtn" style="background-image: url('/textures/stone.png');background-size: cover;" texture="stone"></button>
           </div>
         </section>
 
