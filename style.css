@@ -49,12 +49,6 @@ body {
   position: relative;
 }
 
-@media (0px <= width <= 700px) {
-  #threeJSInteractItem {
-    height: 500px;
-  }
-}
-
 .meshToonMaterialBtn,
 .meshBasicMaterialBtn {
   width: 50px;
